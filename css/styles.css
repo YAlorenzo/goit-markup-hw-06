@@ -154,25 +154,33 @@ span{
     border: none;
     outline: none;
     cursor: pointer;
-   }
-   .icon_container {
-    position: relative;
-    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+   }
+   .input_modal_1:hover,
+   .input_modal_1:focus{
+    border: 1px solid var(--psevdo-color);
+    fill: var(--psevdo-color);
+   }
+   .input_modal_1:hover + .svg_modal_form,
+   .input_modal_1:focus + .svg_modal_form{
+    fill: var(--psevdo-color);
+    color: var(--psevdo-color);
+   }
+   .icon_container {
+    position: relative;
+    width: 100%;
+    
+   
     cursor: pointer;
    }
    .icon_container:checked {
     color: var(--psevdo-color);
     border: solid var(--psevdo-color);
    }
-   .icon_container:hover,
-   .icon_container:focus{
-    color: var(--psevdo-color);
-    border: 1px solid var(--psevdo-color);
-   }
+   
 
    .flex-container .icon_container:not(:first-child) {
     margin-bottom: 14px;
@@ -202,6 +210,7 @@ span{
     letter-spacing: 0.01em;
     color: var(--inform-color);
     user-select: none;
+    margin-bottom: 4px;
    }
    .svg_modal_form {
     position: absolute;
@@ -266,6 +275,8 @@ span{
     font-size: 14px;
     color: var(--inform-color);
     cursor: pointer;
+    justify-content: center;
+    gap: 7px;
    }
    .a_lable_checkbox {
     margin-left: 2px;
@@ -846,7 +857,7 @@ span{
 
 /* footer_form */
 .form_footer {
-    margin-left: 93px;
+    margin-left: auto;
 }
 .footer_form_container {
   display: flex;
